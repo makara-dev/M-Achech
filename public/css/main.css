@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy&display=swap');
+
+html,
+body{
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, 'Kantumruy', sans-serif;
+
+}
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+main{
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+/* Landing Page Style */
+.navigation-background-color {
+    background-color: #267FAF !important;
+}
+.navbar-wrapper {
+    padding-right: 8%;
+    padding-left: 5%;
+}
+.navbar-nav > li ,
+#lan-text { 
+    font-size: 18px; 
+}
+.navbar-nav { margin-top: 20px; }
+
+/* .navbar-brand {
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+} */
+#m-architect-icon{
+    max-height: 80px;
+}
+
+/* footer style */
+footer{
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+.footer {
+    /* margin-top: 5%; */
+    /* padding-left: 3%; */
+    padding-top: 25px;
+    border-top: 0.5px solid black;
+    background-color: #267FAF;
+    color: rgba(255,255,255,0.5);
+}
+
+.social-media-icon > a > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-text { font-size: 14px; }
+
+.footer-contact > div {
+    padding-top: 5px;
+    padding-bottom:6px;
+    margin-left: 10%;
+}
+
+.footer-social {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 200px;
+}
+
+.developer-info { padding-top: 65px; color:rgba(255,255,255,0.5);}
+.developer-info small{
+    font-size: 12px !important;
+}
+.developer-info a{
+    font-size: 15px !important;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.863);
+    text-decoration: none;
+}
+/* Media Query  */
+
+/* navigation bar */
+/* navbar m-architect logo */
+@media screen and (max-width: 1656px) {
+    .navbar-brand > img { width: 220px; }
+}
+@media screen and (max-width: 1530px) {
+    .navbar-wrapper { padding-left: 6%; }
+    .navbar-brand > img { width: 200px; }
+    .navbar-nav > li,
+    #lan-text { 
+        font-size: 15px; 
+    }
+}
+@media only screen and (max-width: 1370px) {
+    .navbar-wrapper { padding-left: 6%; }
+    .navbar-brand > img { width: 190px; }
+    .navbar-nav > li,
+    #lan-text { 
+        font-size: 14px; 
+    }
+    .nav-item { 
+        margin-left: 4px !important; 
+        margin-right: 4px !important; 
+    }
+    .project-slide-wrapper { margin-bottom: 0 !important; }
+}
+@media screen and (max-width: 1128px) {
+    .navbar-wrapper { padding-left: 6%; }
+    .navbar-brand > img { width: 160px; }
+    .navbar-nav > li,
+    #lan-text { 
+        font-size: 12px; 
+    }
+    .nav-item { 
+        margin-left: 4px !important; 
+        margin-right: 4px !important; 
+    }
+}
+@media only screen and (max-width: 990px) {
+    .navbar-nav { text-align: center; }
+}
+
+/* footer */
+/* footer information text */
+@media only screen and (max-width: 1545px){
+    .social-media-icon > a > img { width: 25px; }
+    .footer-contact > div { margin-left: 6%; }
+    .developer-info > small { font-size: 14px !important; }
+    .developer-info > a { font-size: 15px !important; }
+}
+@media only screen and (max-width: 1343px){
+    .social-media-icon > a > img { width: 22px; }
+    .footer-text { font-size: 12px; }
+    .developer-info { padding-top: 60px; }
+    .developer-info > small { font-size: 12px !important; }
+    .developer-info > a { font-size: 13px !important; }
+}
+@media only screen and (max-width: 1178px){
+    .social-media-icon > a > img { width: 20px; }
+    .footer-contact > div { margin-left: 3%; }
+    .footer-text { font-size: 11px; }
+    .footer-icon { width: 10px; }
+    .developer-info > small { font-size: 11px !important; }
+    .developer-info > a { font-size: 12px !important; }
+}
+
+@media only screen and (max-width: 1105px){
+    .developer-info { padding-top: 50px; }
+    .footer-text { font-size: 10px; }
+    .footer-social { padding-left: 168px; }
+    .developer-info > small { font-size: 10px !important; }
+    .developer-info > a { font-size: 11px !important; }
+}
+@media only screen and (max-width: 1033px) {
+    .developer-info > small { font-size: 9px !important; }
+    .developer-info > a { font-size: 10px !important; }
+}
+@media only screen and (max-width: 940px) {
+    .footer-text { font-size: 9px; }
+    .developer-info > small { font-size: 8px !important; }
+    .developer-info > a { font-size: 9px !important; }
+}
+@media only screen and (max-width: 886px) {
+    .footer-social { padding-left: 100px; }
+    .developer-info { 
+        padding-top: 45px;
+        padding-left: 0;
+        padding-right: 0; 
+    }
+    .footer-text { font-size: 8px; }            
+}
+@media only screen and (max-width: 760px) {
+    .footer-text { font-size: 12px; }
+    .developer-info { display: none; }
+    .footer-social { padding-left: 50px; }
+    .social-media-icon > a > img { width: 15px; }
+    .developer-info-mobile {
+        display: block !important;
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 637px) { 
+    .footer-social { padding-left: 46px; } 
+    .footer-text { font-size: 10px; }
+}
+@media only screen and (max-width: 637px) { .footer-social { padding-left: 41px; } }
+@media only screen and (max-width: 393px) { 
+    .footer-text { font-size: 8px; }
+    .footer-social { padding-left: 39px; } 
+    .social-media-icon > a > img { width: 13px; }
+}
+@media only screen and (max-width: 327px) { 
+    .footer { padding-left: 0; }
+    .footer-icon { width: 9px; }
+    .footer-text {
+        margin-left: 12px !important; 
+        font-size: 8px; 
+    }
+    .footer-social { padding-left: 38px; } 
+    .social-media-icon > a > img { 
+        width: 11px; 
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 299px) {
+    .footer-text { font-size: 5px; }
+    .footer-icon { width: 6px; }
+    .social-media-icon > a > img { width: 6px; }
+    .text-copyrights { margin-top:  9px !important;}
+}
+
+/*font size*/
+.font-8 { font-size: 8px }
+.font-10 { font-size: 10px }
+.font-12 { font-size: 12px }
+.font-14 { font-size: 14px }
+.font-16 { font-size: 16px }
+.font-20 { font-size: 20px }

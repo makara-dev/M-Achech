@@ -1,0 +1,492 @@
+/*modify slick slider*/
+.slick-dots {
+    bottom: 20px !important;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+
+.slick-dots li button:before
+{
+    font-size: 12px !important;
+    line-height: 12px !important;
+}
+
+
+
+/*==========================
+    Project Slide Section
+============================*/
+
+.project-preview-container {
+    width: 100%;
+    display: flex;
+}
+
+.project-slide-wrapper {
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex !important;
+    position: relative;
+    flex-direction: column;
+}
+
+.project-slide-wrapper  > .project-showcase {
+    position: relative;
+}
+.project-slide-wrapper  > .project-showcase,
+.project-slide-wrapper  > .body-description-text,
+.project-slide-wrapper  > .header-description-text{
+    width: 100%;
+    display: inline-block !important;
+    vertical-align:top;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Project Text Section*/
+.header-description-text{
+    text-align: center;
+}
+.header-description-text  > h4{
+    font-size: 27px;
+    color: #c92942;
+    font-weight: bold;
+
+    margin-bottom: 0;
+}
+
+.body-description-text {
+    text-align: center;
+    font-size: 9px;
+    color: #707070;
+}
+/* Project show case content */
+.project-showcase{
+    width: 100%;
+    position: relative;
+}
+
+.img-horizontal-block {
+    width: 75%;
+    position: relative;
+    z-index: 1;
+}
+.img-horizontal-block > img{
+    min-width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+}
+
+.inner-vertical-block {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+}
+
+.inner-vertical-block > #player,
+.inner-vertical-block > img{
+    display: inline-block !important;
+    width: 100%;
+    height: 100%;
+}
+
+/*  
+=======================================
+    << END >> Project Slide Section
+=======================================*/
+
+
+/*
+=============================
+    Content Links Section
+=============================*/
+
+.content-container {
+    width: 100%;    
+    text-align: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/img/bg-office.jpg");
+    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+}
+.content-image {
+    max-width: 25%;
+    display: block;
+    margin: 0 auto 2em auto;
+    padding-top: 15%;
+}
+.content-image > img {
+    width: 100%;
+}
+
+.content-container > span {
+    color: red;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+.content-container > h4 {
+    color: #fff;
+    font-size: 12px;
+
+    margin-top: 1em;
+}
+
+.content-nav {
+    display: inline-block;
+
+    text-align: left;
+    list-style: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.content-nav > li > a {
+    display: inline-block;
+    text-decoration: none;
+    word-break: normal;
+
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    color: #fff;
+
+    margin-bottom: 1.5em;
+
+}
+
+.content-nav > li > a:hover {
+    color: red;
+}
+/*
+=======================================
+    << END >> Content Links Section
+=======================================
+*/
+
+
+/*
+=============================
+    Client Icons Slider
+=============================*/
+.ourclient-container {
+    width: 100%;
+}
+
+.ourclient-slide-wrapper {
+    width: 80%;
+
+    padding-top: 1em;
+    padding-bottom: 3em;
+    margin-left: 10%;
+}
+
+.ourclient-text {
+    padding-top: 3em;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: #707070;
+
+    font-size: 12px;
+}
+
+.ourclient-icon-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    text-decoration: none;
+
+}
+
+.ourclient-icon-wrapper > span{
+    flex: 0 1 70%;
+
+    font-size: 10px;
+    color: #646464;
+    text-align: left;
+
+    padding-left: 2.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ourclient-icon{
+    flex: 0 1 30%;
+}
+
+.ourclient-icon > img {
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all  0.4s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+
+    border-radius: 50%;
+
+}
+.ourclient-icon > img:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+/*
+=======================================
+    << END >> Client Icon Slider
+=======================================
+*/
+
+/* FB Messenger Style*/
+a.fb-msg-btn {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    margin: 0;
+    background-color: #0084ff;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+a:hover.fb-msg-btn {
+    background-color: #0268c7;
+}
+
+/* ==================== 
+------ Break Point ----- 
+=======================*/
+
+/* mobile */
+@media screen and (max-width: 599) {
+    .project-slide-wrapper  > .header-description-text {
+        order: 1;
+    }
+    .project-slide-wrapper  > .body-description-text {
+        order: 3;
+    }
+    .project-slide-wrapper  > .project-showcase {
+        order: 2;
+    }
+}
+
+/*large mobile */
+@media screen and (min-width: 600px){
+    .project-slide-wrapper{
+        height: 100%;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+    .header-description-text{
+        margin-top: 2vh;
+    }
+
+    .header-description-text > h4{
+        font-size: 35px;
+        letter-spacing: 0.05em;
+    }
+
+    .body-description-text > p { font-size: 12px;}
+
+}
+
+/* tablet*/
+@media screen and (min-width: 768px){
+    /*---------------*/
+    .header-description-text > h4{
+        font-size: 32px;
+    }
+    
+    /*--------------------*/
+    .ourclient-icon-wrapper {
+        justify-content: center;
+    
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    .ourclient-icon-wrapper > span{
+        display: none;
+    }
+    
+    .ourclient-icon{
+        flex: 0 1 80%;
+    }    
+}
+
+
+/* laptop */
+/* different layout */
+/*also change in JS file*/
+@media screen and (min-width: 1024px) and (min-aspect-ratio: 12/10) {
+    .project-slide-wrapper{
+        display: block !important;
+        padding: 2em 2em 0 2em;
+    }
+    
+    .project-slide-wrapper  > .project-showcase{
+        width: 70%;
+        float: right;
+    }
+
+    .project-slide-wrapper  > .body-description-text,
+    .project-slide-wrapper  > .header-description-text{
+        width: 30%;
+        display: inline-block !important;
+        text-align: left;
+    }
+
+    .project-showcase > .inner-vertical-block {
+        width: 50%;
+    }
+
+    /*placeholder before js set*/
+    .project-slide-wrapper > .header-description-text {
+        margin-top: 16%;
+    }
+
+    .header-description-text > h4 {
+        font-size: 24px;
+    }
+
+    .body-description-text > p { 
+        font-size: 10.5px;
+        padding-right: 1em;
+        line-height: 1.3em;
+    }
+
+    
+    /*---------------*/
+    .content-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .content-image {
+        max-width: 20%;
+        margin: 0 auto 3em auto;
+        padding-top: 12%;
+    }
+    
+    .content-container > span {
+        font-size: 18px;
+        margin-top: 5em;
+    }
+    .content-container > h4 {
+        font-size: 25px;
+        line-height: 1.3em;
+        margin-top: auto;
+    }
+    .content-nav {
+        width: 92.5%;
+        margin-top: auto;
+        margin-bottom: 7%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content-nav > li {
+        flex: 0 0 18%;
+        font-size: 20px;
+        line-height: 1.1em;
+    }
+
+}
+
+/* large laptop */
+@media screen and (min-width: 1200px) {
+    .project-slide-wrapper{
+        padding: 0 5em 0 5em;
+    }
+    .project-showcase > .inner-vertical-block {
+        width: 45%;
+    }
+
+    .header-description-text > h4 {
+        font-size: 28px;
+    }
+    .body-description-text > p {
+        font-size: 12px;
+        line-height: 1.3em;
+        padding-right: 2em;
+    }
+
+    /*----------------*/
+    .content-nav > li > a {
+        font-size: 25px;
+    }
+
+    /*---------------*/
+    .ourclient-text{
+        font-size: 20px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1500px) {
+    .project-slide-wrapper  > .project-showcase{
+        width: 70%;
+        padding-left: 5em;
+        right: 5em;
+    }
+
+    .project-slide-wrapper  > .body-description-text,
+    .project-slide-wrapper  > .header-description-text{
+        width: 30%;
+    }
+    .header-description-text > h4{
+        font-size: 35px;
+        padding-bottom: 0.5em;
+    }
+    .body-description-text > p {
+        font-size: 13px;
+        line-height: 1.2em;
+    }
+    
+}
+/* ======================== */
+@media screen and (min-width: 1920px) {
+    .body-description-text > p {
+        max-width: 700px;
+        font: 30px;
+    }
+    
+}
+
+

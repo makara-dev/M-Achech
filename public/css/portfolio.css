@@ -1,0 +1,131 @@
+/* Portfolio Page Style */
+.portfolio-container {
+    width: 100%;
+}
+
+.portfolio-text {
+    padding-top: 3%;
+    padding-left: 3%;
+
+    color: #707070;
+}
+
+.portfolio-text > h4 { 
+    font-weight: bolder; 
+}
+
+.portfolio-text > p{ 
+    font-size: 12px;
+}
+
+.portfolio-card > a {
+    text-decoration: none;
+}
+
+.portfolio-card-container {
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    display: flex;
+    flex: 1 0 50%;
+    padding: 0 3% 3% 3%;
+    align-self: stretch;
+}
+
+.portfolio-card > a{
+   display: flex;
+   flex-direction: column;
+}
+.portfolio-card > a > img{
+    width: 100%;
+    margin-bottom: 5%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
+}
+
+.portfolio-card-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-grow: 1;
+    color: #707070;
+}
+
+.portfolio-card-text > p {
+    flex-grow: 1;
+    font-weight: 500;
+    margin: 0;
+}
+.portfolio-card-text > small {
+    text-align: right;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    flex-shrink: 1;
+}
+
+/*mobile*/
+@media screen and (max-width: 450px) {
+    .portfolio-card-container{
+        flex-flow: column wrap;
+        align-content: center;
+        -ms-align-content: center;
+        -webkit-align-content: center;
+        
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .portfolio-card { 
+        max-width: 100%;
+        flex: 0 1 100%;
+    }
+    .portfolio-card-text > p { 
+        font-size: 12px 
+    }
+    .portfolio-card-text > small { 
+        font-size: 10px 
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 450px) {
+    .portfolio-card-container{
+        flex-direction: row;
+    }
+    .portfolio-card{ 
+        flex: 0 1 50% 
+    }
+}
+
+@media screen and (min-width: 748px) {
+    .portfolio-card{
+        flex: 0 1 33%;
+    }
+    .portfolio-card-text > p{
+        font-size: 11px;
+    }
+    .portfolio-card-text > small{
+        font-size: 10px;
+    }
+}
+/*laptop*/
+@media screen and (min-width: 1024px) {
+    .portfolio-card{
+        flex: 0 1 25%;
+    }
+    .portfolio-card-text > p{
+        font-size: 13px;
+    }
+    .portfolio-card-text > small{
+        font-size: 12px;
+    }
+}
+
+
+

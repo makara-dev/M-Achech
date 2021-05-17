@@ -1,0 +1,67 @@
+.time-line-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.company-profile-text {
+    width: 100%;
+} 
+.time-line-list-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.time-line-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    list-style: none;
+    position: relative;
+}
+.circle-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.project-text {
+    font-size: 18px;
+}
+.v-line-node {
+    width: 1px;
+    height: 60px;
+    background-color: black;
+}
+.circle-node {
+    width: 25px;
+    height: 25px;
+    border: 0;
+    box-shadow: 0 0 1px 1px #707070;
+    background-color: #707070;
+    border-radius: 50%;
+}
+.h-line-node {
+    width: 125px;
+    height: 1.5px;
+    left: 110px;
+    bottom: 10px;
+    position: absolute;
+    background-color: black;
+}
+.time-line-list1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    list-style: none;
+    position: relative;
+}
+.project-text1 {
+    position: absolute;
+}
+.h-line-node1 {
+    width: 125px;
+    height: 1.5px;
+    /* left: 60px;
+    bottom: 10px;
+    position: absolute; */
+    background-color: black;
+}

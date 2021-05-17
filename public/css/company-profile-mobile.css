@@ -1,0 +1,385 @@
+.time-line-wrapper {
+    display: flex !important;
+    flex-flow: column wrap;
+    color: #707070;
+}
+.company-profile-text {
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.service-menu {
+    margin: 15px;
+}
+
+.time-line-body {
+    height: 0px;
+    font-size: 13px;
+    overflow: hidden;
+    list-style-type: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.time-line-header {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle-node {
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #707070;
+    box-shadow: 0 0 1px 1px #707070;
+}
+
+.project-year-text, 
+.project-header-text {
+    margin: 0;
+}
+.project-header-text { width: 50%; }
+
+.time-line-body {
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-block {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    /* width: 100%; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.img-wrapper > img {
+    max-width: 150px;
+    max-height: 150px;
+}
+.img-wrapper > small {
+    /* taking the width of image */
+    width: 150px;
+    color: #707070; 
+}
+
+.h-line-node {
+    width: 50px;
+    height: 2px;
+    /* (img height) / 2 */
+    margin-top: 42px;
+    background-color: #707070;
+}
+
+hr {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    border:solid 0.5px #707070;
+}
+
+.founder {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.founder-wrapper {
+    margin-top: 20px;
+}
+.logo-wrapper { width: 100%; }
+.logo-wrapper > img { 
+    max-width: 180px;
+    max-height: 180px;
+}
+.founder-text-wrapper {
+    padding-top: 20px;
+    width: 100%;
+}
+.founder-text-wrapper > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.time-line-vline {
+    width: 1.5px;
+    height: 0px;
+    margin-left: 16px;
+    margin-top: 31px;
+    position: absolute;
+    background-color: #707070;
+}
+.top-v-line{
+    width: 1.5px;
+    height: 50px;
+    margin-left: 6px;
+    margin-top: 18px;
+    position: absolute;
+    background-color: #707070;
+}
+.middle-v-line {
+    width: 1.5px;
+    height: 150px;
+    margin-left: 6px;
+    position: absolute;
+    background-color: #707070;
+}
+.bottom-v-line {
+    width: 1.5px;
+    height: 100px;
+    margin-left: 6px;
+    margin-top: -50px;
+    position: absolute;
+    background-color: #707070;
+}
+
+/* our team */
+.our-team-wrapper {
+    width: 100%;
+    /* margin-top: 20%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-profile-block {
+    width: 50%;
+    margin: 30px;
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.team-img-wrapper {
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.team-img-wrapper::after {
+    display: flex;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(80, 100, 110, 0.822));    
+    margin-top: -250px;
+    min-height: 250px;
+    content: '';
+}
+.team-img-wrapper > img {
+    width: 100%;
+}
+.team-profile-text {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 10px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+.team-profile-text > h5 { font-size: 18px; }
+.team-description {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    background: rgba(133, 142, 146, 0.822);
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+.team-description > p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.about-m-block {
+    display: flex;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    flex-flow: column wrap;
+    color: #707070;
+}
+.description-text {
+    line-height: 1.1em;
+}
+
+/* hover display team description */
+.team-img-wrapper:hover .team-description {
+    visibility: visible;
+    opacity: 0.8;
+}
+.team-img-wrapper:hover .team-profile-text{
+    visibility: hidden;
+}
+
+/* media query for mobile version company profile */
+@media only screen and (max-width: 1052px) {
+    .team-img-wrapper::after {
+         margin-top: -195px;
+         min-height: 195px;
+    }
+}
+@media only screen and (max-width: 860px ){
+    .team-profile-text > h5 { font-size: 15px; }
+    .team-description > p { font-size: 12px !important; }
+    .team-profile-text { bottom: 5px; }
+    .header-text { font-size: 18px; }
+    .description-text { font-size: 14px; }
+}
+@media only screen and (max-width: 750px ){
+    .team-profile-block { width: 55%; }
+}
+@media only screen and (max-width: 698px){
+    .team-profile-text > h5 { font-size: 14px; }
+    .team-description > p { font-size: 11px !important; }
+}
+@media only screen and (max-width: 675px) {
+    .team-img-wrapper::after {
+        margin-top: -145px;
+        min-height: 145px;
+    }
+}
+@media only screen and (max-width: 610px){
+    .team-profile-block { width: 70%; }
+    .team-img-wrapper { width: 65%; }
+    .team-profile-text > h5 { font-size: 16px; }
+    .team-description > p { font-size: 13px !important; }
+}
+@media only screen and (max-width: 526px){
+    .team-profile-text > h5 { font-size: 14px; }
+    .team-description > p { font-size: 11px !important; }
+    .header-text { font-size: 16px; }
+    .description-text { font-size: 11px; }
+}
+@media only screen and (max-width: 443px) {
+    .team-profile-text > h5 { font-size: 12px; }
+    .team-description > p { font-size: 10px !important; }
+}
+@media only screen and (max-width: 418px){
+    .circle-node {
+        width: 12px;
+        height: 12px;
+    }
+    .founder-text-wrapper > p { font-size: 17px; }
+    .company-profile-text { font-size: 18px;  }
+    .img-wrapper > img {
+        max-width: 130px;
+        max-height: 130px;
+    }
+    .img-wrapper > small {
+        width: 130px;
+        font-size: 75%;
+    }
+    .h-line-node {
+        width: 40px;
+        margin-top: 40px;
+    }
+    .team-profile-text > h5 { font-size: 11px; }
+    .team-description > p { font-size: 9px !important; }
+}
+@media only screen and (max-width: 398px) {
+    .company-profile-text { font-size: 17px; }
+    .project-block {  margin-bottom: 10px; }
+    .founder-text-wrapper > p { font-size: 15px; }
+    .img-wrapper > img {
+        max-width: 115px;
+        max-height: 115px;
+    }
+    .img-wrapper > small {
+        width: 115px;
+        font-size: 70%;
+    }
+    .h-line-node {
+        width: 30px;
+        margin-top: 35px;
+    }
+    .time-line-vline {
+        width: 1.5px;
+        height: 0px;
+        margin-left: 16px;
+        margin-top: 31px;
+        position: absolute;
+        background-color: #707070;
+    }
+    .team-profile-block { width: 90%; }
+    .team-profile-text > h5 { font-size: 15px; }
+    .team-description > p { font-size: 11px !important; }
+}
+@media only screen and (max-width: 344px) {
+    .team-profile-text > h5 { font-size: 13px; }
+    .team-description > p { font-size: 10px !important; }
+}
+@media only screen and (max-width: 340px) {
+    .company-profile-text { font-size: 16px; }
+    .circle-node {
+        width: 9px;
+        height: 9px;
+    }
+    .logo-wrapper > img {
+        max-width: 120px;
+        max-height: 120px;
+    } 
+    .founder-text-wrapper > p { font-size: 13px; }
+    .img-wrapper > img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .img-wrapper > small {
+        width: 100px;
+        font-size: 65%;
+    }
+    .h-line-node {
+        width: 25px;
+        margin-top: 30px;
+    }
+    .time-line-vline {
+        margin-left: 14px;
+    }
+    .middle-v-line,
+    .bottom-v-line,
+    .top-v-line {
+        margin-left: 4px;
+    }
+}
+@media only screen and (max-width: 322px){
+    .team-profile-text > h5 { font-size: 12px; }
+    .team-description > p { font-size: 9px !important; }
+}
+@media only screen and (max-width: 287px){
+    .team-profile-text > h5 { font-size: 10px; }
+    .team-description > p { font-size: 8px !important; }
+}
